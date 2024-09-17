@@ -8,6 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@types/node": "^22.5.5",
     "prettier": "^3.2.5",
     "turbo": "^2.1.2",
     "typescript": "^5.4.5"
@@ -314,6 +315,7 @@
     "neo-async": "^2.6.2",
     "netmask": "^2.0.2",
     "next": "^14.2.6",
+    "next-auth": "^4.24.7",
     "no-case": "^2.3.2",
     "node-plop": "^0.26.3",
     "node-releases": "^2.0.18",

@@ -1,9 +1,11 @@
 
 import { Providers } from "../providers";
+import { AppbarClient } from "../components/AppbarClient";
 import "./globals.css";
-import {Inter} from "next/font/google"
+import { Inter } from "next/font/google"
 
-const inter =Inter({subsets:["latin"]})
+
+const inter = Inter({ subsets: ["latin"] })
 
 
 export default function RootLayout({
@@ -14,7 +16,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <div className="min-w-screen min-h-screen bg-[#ebe6e6]">
+
+            <AppbarClient />
+
+            {children}
+          </div>
+        </body>
+
       </Providers>
     </html>
   );
